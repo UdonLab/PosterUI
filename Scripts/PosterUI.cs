@@ -31,6 +31,10 @@ namespace Sonic853.Udon.PosterUI
         /// </summary>
         public int index = 0;
         /// <summary>
+        /// 目标位置
+        /// </summary>
+        public float target = 0;
+        /// <summary>
         /// 是否需要移动
         /// </summary>
         [NonSerialized] public bool touchMove = false;
@@ -76,8 +80,6 @@ namespace Sonic853.Udon.PosterUI
                 // 获得 scrollRect 的水平滚动值
                 var x = scrollRect.horizontalNormalizedPosition;
                 // 平滑移动到目标位置
-                var target = (float)index / (count - 1);
-                Log($"target: {target}");
                 x = Mathf.Lerp(x, target, (Time.time - lastMoveTime) / moveTime);
                 Log($"x: {x}");
                 scrollRect.horizontalNormalizedPosition = x;
@@ -100,6 +102,7 @@ namespace Sonic853.Udon.PosterUI
                     {
                         index = 0;
                     }
+                    target = (float)index / (count - 1);
                     touchMove = true;
                 }
             }
@@ -107,12 +110,14 @@ namespace Sonic853.Udon.PosterUI
         public void Previous()
         {
             index = index - 1 < 0 ? count - 1 : index - 1;
+            target = (float)index / (count - 1);
             lastMoveTime = Time.time;
             touchMove = true;
         }
         public void Next()
         {
             index = index + 1 >= count ? 0 : index + 1;
+            target = (float)index / (count - 1);
             lastMoveTime = Time.time;
             touchMove = true;
         }
@@ -138,6 +143,7 @@ namespace Sonic853.Udon.PosterUI
             Log($"x: {x}");
             // 计算当前位置与哪一页最近
             index = Mathf.RoundToInt(x * (count - 1));
+            target = (float)index / (count - 1);
             Log($"index: {index}");
         }
         #endregion
