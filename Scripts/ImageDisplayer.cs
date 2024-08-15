@@ -7,9 +7,10 @@ namespace Sonic853.Udon.PosterUI
 {
     public class ImageDisplayer : UdonSharpBehaviour
     {
+        public MeshRenderer meshRenderer;
         public Material material;
         public string textureName = "_MainTex";
-        public Image image;
+        public Image uiImage;
         public RawImage rawImage;
         /// <summary>
         /// 图集横排数量
@@ -43,20 +44,29 @@ namespace Sonic853.Udon.PosterUI
         /// 图片位置高度
         /// </summary>
         public int positionHeight = 2048;
-        public bool SetTexture(Texture2D texture)
+        public Texture2D texture;
+        public bool SetTexture() => SetTexture(texture);
+        public bool SetTexture(Texture2D _texture)
         {
+            if (meshRenderer != null && meshRenderer.material != null)
+            {
+                if (string.IsNullOrEmpty(textureName))
+                    meshRenderer.material.mainTexture = _texture;
+                else
+                    meshRenderer.material.SetTexture(textureName, _texture);
+            }
             if (material != null)
             {
                 if (string.IsNullOrEmpty(textureName))
-                    material.mainTexture = texture;
+                    material.mainTexture = _texture;
                 else
-                    material.SetTexture(textureName, texture);
+                    material.SetTexture(textureName, _texture);
             }
             if (image != null)
             {
                 image.sprite = Sprite.Create(
-                    texture,
-                    new Rect(0, 0, texture.width, texture.height),
+                    _texture,
+                    new Rect(0, 0, _texture.width, _texture.height),
                     new Vector2(0.5f, 0.5f),
                     100,
                     0,
@@ -67,45 +77,49 @@ namespace Sonic853.Udon.PosterUI
             }
             if (rawImage != null)
             {
-                rawImage.texture = texture;
+                rawImage.texture = _texture;
             }
             return true;
         }
-        public bool SetImage(Image image)
+        public Image image;
+        public bool SetImage() => SetImage(image);
+        public bool SetImage(Image _image)
         {
             if (material != null)
             {
                 if (string.IsNullOrEmpty(textureName))
-                    material.mainTexture = image.sprite.texture;
+                    material.mainTexture = _image.sprite.texture;
                 else
-                    material.SetTexture(textureName, image.sprite.texture);
+                    material.SetTexture(textureName, _image.sprite.texture);
             }
-            if (this.image != null)
+            if (uiImage != null)
             {
-                this.image.sprite = image.sprite;
+                uiImage.sprite = _image.sprite;
             }
             if (rawImage != null)
             {
-                rawImage.texture = image.sprite.texture;
+                rawImage.texture = _image.sprite.texture;
             }
             return true;
         }
-        public bool SetSprite(Sprite sprite)
+        public Sprite sprite;
+        public bool SetSprite() => SetSprite(sprite);
+        public bool SetSprite(Sprite _sprite)
         {
             if (material != null)
             {
                 if (string.IsNullOrEmpty(textureName))
-                    material.mainTexture = sprite.texture;
+                    material.mainTexture = _sprite.texture;
                 else
-                    material.SetTexture(textureName, sprite.texture);
+                    material.SetTexture(textureName, _sprite.texture);
             }
             if (image != null)
             {
-                image.sprite = sprite;
+                image.sprite = _sprite;
             }
             if (rawImage != null)
             {
-                rawImage.texture = sprite.texture;
+                rawImage.texture = _sprite.texture;
             }
             return true;
         }
