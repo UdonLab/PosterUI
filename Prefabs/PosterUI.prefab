@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: -1533785930, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AllowFocusView: 1
 --- !u!114 &2955122698765548385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,9 +409,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4332817297409862544}
+  meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  image: {fileID: 701747094331560062}
+  uiImage: {fileID: 0}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -420,6 +422,9 @@ MonoBehaviour:
   positionY: 0
   positionWidth: 2048
   positionHeight: 2048
+  texture: {fileID: 0}
+  image: {fileID: 701747094331560062}
+  sprite: {fileID: 0}
 --- !u!114 &4332817297409862544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,9 +813,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 1191564886110254233}
+  meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  image: {fileID: 7223475314033094201}
+  uiImage: {fileID: 0}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -820,6 +826,9 @@ MonoBehaviour:
   positionY: 0
   positionWidth: 2048
   positionHeight: 2048
+  texture: {fileID: 0}
+  image: {fileID: 7223475314033094201}
+  sprite: {fileID: 0}
 --- !u!114 &1191564886110254233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1097,9 +1106,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 7293255888288625599}
+  meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  image: {fileID: 6800962140894956957}
+  uiImage: {fileID: 0}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -1109,6 +1119,9 @@ MonoBehaviour:
   positionY: 0
   positionWidth: 2048
   positionHeight: 2048
+  texture: {fileID: 0}
+  image: {fileID: 6800962140894956957}
+  sprite: {fileID: 0}
 --- !u!114 &7293255888288625599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,9 +1384,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 9048059279449120946}
+  meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  image: {fileID: 2864381599143535218}
+  uiImage: {fileID: 0}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -1383,6 +1397,9 @@ MonoBehaviour:
   positionY: 0
   positionWidth: 2048
   positionHeight: 2048
+  texture: {fileID: 0}
+  image: {fileID: 2864381599143535218}
+  sprite: {fileID: 0}
 --- !u!114 &9048059279449120946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,9 +1524,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 485908368006217124}
+  meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  image: {fileID: 3900782852044598521}
+  uiImage: {fileID: 0}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -1519,6 +1537,9 @@ MonoBehaviour:
   positionY: 0
   positionWidth: 2048
   positionHeight: 2048
+  texture: {fileID: 0}
+  image: {fileID: 3900782852044598521}
+  sprite: {fileID: 0}
 --- !u!114 &485908368006217124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,13 +1625,16 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 704171656653280163}
   url:
-    url: https://853.moe/Static_library/example/2046x2048_example.png
+    url: https://page.853lab.com/Static_library/example/2046x2048_example.png
   loadOnStart: 1
   udonSendFunction: {fileID: 4918816022603901800}
   sendCustomEvent: SendFunction
   setVariableName: content
   retryCount: 3
+  cacheContent: 0
+  cacheUrls: []
   content: {fileID: 0}
+  cacheContents: []
 --- !u!114 &704171656653280163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,9 +1849,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 7227303875033065503}
+  meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  image: {fileID: 83830431941011217}
+  uiImage: {fileID: 0}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -1837,6 +1862,9 @@ MonoBehaviour:
   positionY: 0
   positionWidth: 2048
   positionHeight: 2048
+  texture: {fileID: 0}
+  image: {fileID: 83830431941011217}
+  sprite: {fileID: 0}
 --- !u!114 &7227303875033065503
 MonoBehaviour:
   m_ObjectHideFlags: 0
