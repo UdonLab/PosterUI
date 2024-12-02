@@ -153,7 +153,7 @@ namespace Sonic853.Udon.PosterUI
         {
             // if (debuger == null)
             // {
-            //     Debug.Log($"{_programName}: {text}");
+                Debug.Log($"{_programName}: {text}");
             //     return;
             // }
             // debuger.Log(text, _programName);
@@ -163,7 +163,7 @@ namespace Sonic853.Udon.PosterUI
         {
             // if (debuger == null)
             // {
-            //     Debug.LogWarning($"{_programName}: {text}");
+                Debug.LogWarning($"{_programName}: {text}");
             //     return;
             // }
             // debuger.LogWarning(text, _programName);
@@ -173,7 +173,7 @@ namespace Sonic853.Udon.PosterUI
         {
             // if (debuger == null)
             // {
-            //     Debug.LogError($"{_programName}: {text}");
+                Debug.LogError($"{_programName}: {text}");
             //     return;
             // }
             // debuger.LogError(text, _programName);
