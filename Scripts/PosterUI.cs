@@ -41,7 +41,7 @@ namespace Sonic853.Udon.PosterUI
         /// <summary>
         /// 移动时间
         /// </summary>
-        public float moveTime = 0.5f;
+        public float moveTime = 0.7f;
         /// <summary>
         /// 上次移动时间
         /// </summary>
@@ -53,7 +53,7 @@ namespace Sonic853.Udon.PosterUI
         /// <summary>
         /// 自动移动时间
         /// </summary>
-        public float autoMoveTime = 5;
+        public float autoMoveTime = 10f;
         /// <summary>
         /// 当鼠标按下
         /// </summary>
