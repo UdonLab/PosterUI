@@ -1,6 +1,6 @@
 {
   "name": "com.sonic853.udonlab.posterui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "displayName": "Udon Lab - PosterUI",
   "description": "Automatically update News and Events",
   "unity": "2022.3",
@@ -16,7 +16,7 @@
     "url": "https://github.com/Sonic853"
   },
   "vpmDependencies": {
-    "com.sonic853.udonlab.urlloader": "1.x.x"
+    "com.sonic853.udonlab.urlloader": "2.x.x"
   },
   "legacyFolders": {
     "Assets\\Sonic853\\Udon Lab\\PosterUI": "9a12694fc1b4af04fb039755178819a6"

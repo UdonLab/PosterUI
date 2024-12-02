@@ -62,9 +62,9 @@ namespace Sonic853.Udon.PosterUI
                 else
                     material.SetTexture(textureName, _texture);
             }
-            if (image != null)
+            if (uiImage != null)
             {
-                image.sprite = Sprite.Create(
+                uiImage.sprite = Sprite.Create(
                     _texture,
                     new Rect(0, 0, _texture.width, _texture.height),
                     new Vector2(0.5f, 0.5f),
@@ -113,9 +113,9 @@ namespace Sonic853.Udon.PosterUI
                 else
                     material.SetTexture(textureName, _sprite.texture);
             }
-            if (image != null)
+            if (uiImage != null)
             {
-                image.sprite = _sprite;
+                uiImage.sprite = _sprite;
             }
             if (rawImage != null)
             {

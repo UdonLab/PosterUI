@@ -412,7 +412,7 @@ MonoBehaviour:
   meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  uiImage: {fileID: 0}
+  uiImage: {fileID: 701747094331560062}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -423,7 +423,7 @@ MonoBehaviour:
   positionWidth: 2048
   positionHeight: 2048
   texture: {fileID: 0}
-  image: {fileID: 701747094331560062}
+  image: {fileID: 0}
   sprite: {fileID: 0}
 --- !u!114 &4332817297409862544
 MonoBehaviour:
@@ -816,7 +816,7 @@ MonoBehaviour:
   meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  uiImage: {fileID: 0}
+  uiImage: {fileID: 7223475314033094201}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -827,7 +827,7 @@ MonoBehaviour:
   positionWidth: 2048
   positionHeight: 2048
   texture: {fileID: 0}
-  image: {fileID: 7223475314033094201}
+  image: {fileID: 0}
   sprite: {fileID: 0}
 --- !u!114 &1191564886110254233
 MonoBehaviour:
@@ -1109,7 +1109,7 @@ MonoBehaviour:
   meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  uiImage: {fileID: 0}
+  uiImage: {fileID: 6800962140894956957}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   positionWidth: 2048
   positionHeight: 2048
   texture: {fileID: 0}
-  image: {fileID: 6800962140894956957}
+  image: {fileID: 0}
   sprite: {fileID: 0}
 --- !u!114 &7293255888288625599
 MonoBehaviour:
@@ -1387,7 +1387,7 @@ MonoBehaviour:
   meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  uiImage: {fileID: 0}
+  uiImage: {fileID: 2864381599143535218}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   positionWidth: 2048
   positionHeight: 2048
   texture: {fileID: 0}
-  image: {fileID: 2864381599143535218}
+  image: {fileID: 0}
   sprite: {fileID: 0}
 --- !u!114 &9048059279449120946
 MonoBehaviour:
@@ -1527,7 +1527,7 @@ MonoBehaviour:
   meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  uiImage: {fileID: 0}
+  uiImage: {fileID: 3900782852044598521}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -1538,7 +1538,7 @@ MonoBehaviour:
   positionWidth: 2048
   positionHeight: 2048
   texture: {fileID: 0}
-  image: {fileID: 3900782852044598521}
+  image: {fileID: 0}
   sprite: {fileID: 0}
 --- !u!114 &485908368006217124
 MonoBehaviour:
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   meshRenderer: {fileID: 0}
   material: {fileID: 0}
   textureName: _MainTex
-  uiImage: {fileID: 0}
+  uiImage: {fileID: 83830431941011217}
   rawImage: {fileID: 0}
   atlasWidth: 3
   atlasHeight: 2
@@ -1863,7 +1863,7 @@ MonoBehaviour:
   positionWidth: 2048
   positionHeight: 2048
   texture: {fileID: 0}
-  image: {fileID: 83830431941011217}
+  image: {fileID: 0}
   sprite: {fileID: 0}
 --- !u!114 &7227303875033065503
 MonoBehaviour:
