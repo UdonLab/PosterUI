@@ -8,7 +8,7 @@ namespace Sonic853.Udon.PosterUI
 {
     public class PosterUI : UdonSharpBehaviour
     {
-        string programName = "PosterUI.PosterUI";
+        string programName = "PosterUI";
         // public UdonDebuger debuger;
         /// <summary>
         /// 滚动视图
@@ -153,7 +153,7 @@ namespace Sonic853.Udon.PosterUI
         {
             // if (debuger == null)
             // {
-                Debug.Log($"{_programName}: {text}");
+                // Debug.Log($"{_programName}: {text}");
             //     return;
             // }
             // debuger.Log(text, _programName);
