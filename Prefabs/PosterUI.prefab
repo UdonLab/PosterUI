@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3478123744139028662}
   - component: {fileID: 2955122698765548385}
   - component: {fileID: 1258598571724242363}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PosterUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 3.35}
+  m_AnchoredPosition: {x: 0, y: 3.350006}
   m_SizeDelta: {x: 682, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5317912774532013300
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 10
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2715770581032725258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 7204714787783339961}
   - component: {fileID: 4785029747504706086}
   - component: {fileID: 181094634245095122}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Previous
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 701747094331560062}
   - component: {fileID: 9027551337101450350}
   - component: {fileID: 4332817297409862544}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,10 +344,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1010776504949091623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1705, y: -512}
+  m_SizeDelta: {x: 682, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4800349035576087147
 CanvasRenderer:
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 417264634073170081}
   - component: {fileID: 2115504075766054750}
   - component: {fileID: 5381267849314934181}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 8327068188325889987}
   - component: {fileID: 8154802734139737395}
   - component: {fileID: 8883921375448098585}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 7223475314033094201}
   - component: {fileID: 1139405462216457472}
   - component: {fileID: 1191564886110254233}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,10 +748,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1010776504949091623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2387, y: -512}
+  m_SizeDelta: {x: 682, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2306178683950240356
 CanvasRenderer:
@@ -867,7 +867,7 @@ GameObject:
   - component: {fileID: 5645249232013736388}
   - component: {fileID: 4155437719710938130}
   - component: {fileID: 46456249807136255}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 6800962140894956957}
   - component: {fileID: 983936361649074068}
   - component: {fileID: 7293255888288625599}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1041,10 +1041,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1010776504949091623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1023, y: -512}
+  m_SizeDelta: {x: 682, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &669862699914883867
 CanvasRenderer:
@@ -1160,7 +1160,7 @@ GameObject:
   - component: {fileID: 1420392874771975311}
   - component: {fileID: 73936863104981042}
   - component: {fileID: 4918816022603901800}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 2864381599143535218}
   - component: {fileID: 5139299493652673828}
   - component: {fileID: 9048059279449120946}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1319,10 +1319,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1010776504949091623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 3751, y: -512}
+  m_SizeDelta: {x: 682, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1873974105608892848
 CanvasRenderer:
@@ -1438,7 +1438,7 @@ GameObject:
   - component: {fileID: 3900782852044598521}
   - component: {fileID: 1371361395343513520}
   - component: {fileID: 485908368006217124}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1459,10 +1459,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1010776504949091623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 3069, y: -512}
+  m_SizeDelta: {x: 682, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1602825730279904807
 CanvasRenderer:
@@ -1576,7 +1576,7 @@ GameObject:
   - component: {fileID: 2065419991557166753}
   - component: {fileID: 2605787817858188809}
   - component: {fileID: 704171656653280163}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: UrlImageLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1672,7 +1672,7 @@ GameObject:
   - component: {fileID: 3330096020119344872}
   - component: {fileID: 344199057530944593}
   - component: {fileID: 400069273439453741}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1763,7 +1763,7 @@ GameObject:
   - component: {fileID: 83830431941011217}
   - component: {fileID: 4185392489294340979}
   - component: {fileID: 7227303875033065503}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1784,10 +1784,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1010776504949091623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 341, y: -512}
+  m_SizeDelta: {x: 682, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8630972040888157229
 CanvasRenderer:

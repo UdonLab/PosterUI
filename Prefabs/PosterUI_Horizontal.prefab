@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4606929385375544482}
   - component: {fileID: 5811229088435545655}
   - component: {fileID: 6050846218465245546}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 2564825259130303918}
   - component: {fileID: 3388878087900855253}
   - component: {fileID: 1991600305969497970}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PosterUI_Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.75, y: 3.35}
+  m_AnchoredPosition: {x: 1.75, y: 3.350006}
   m_SizeDelta: {x: 1024, y: 682}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1511256680539191614
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 10
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2222540728859670376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 886023347487124392}
   - component: {fileID: 5000393900825271823}
   - component: {fileID: 2408808336980197509}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 3419438123486895133}
   - component: {fileID: 805404770063780335}
   - component: {fileID: 698386856649143226}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 9051833975949954864}
   - component: {fileID: 4868718417558705283}
   - component: {fileID: 7238072907046484420}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 4677992184319945855}
   - component: {fileID: 7080111268790641001}
   - component: {fileID: 5115685016028434079}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 1804115562173959791}
   - component: {fileID: 6788156474176071650}
   - component: {fileID: 5681494139041515027}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Previous
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 4534080792197668411}
   - component: {fileID: 5010530695798650499}
   - component: {fileID: 3433912787193711221}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 6099077424357276968}
   - component: {fileID: 9076445994837579986}
   - component: {fileID: 7469674043052404503}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1258,7 +1258,7 @@ GameObject:
   - component: {fileID: 8489492891374865078}
   - component: {fileID: 8692232677313056601}
   - component: {fileID: 8975521028195442191}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1395,7 +1395,7 @@ GameObject:
   - component: {fileID: 8484720960581770191}
   - component: {fileID: 4190805086492081273}
   - component: {fileID: 4337119870426708001}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1528,7 @@ GameObject:
   - component: {fileID: 4670774916854005010}
   - component: {fileID: 3654634286846566688}
   - component: {fileID: 2019283863982267078}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1666,7 +1666,7 @@ GameObject:
   - component: {fileID: 7803159809418840664}
   - component: {fileID: 7553714973640372087}
   - component: {fileID: 8445143065182239019}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: UrlImageLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1763,7 +1763,7 @@ GameObject:
   - component: {fileID: 5353034580499120266}
   - component: {fileID: 8930796394408335579}
   - component: {fileID: 6819877487213413694}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
