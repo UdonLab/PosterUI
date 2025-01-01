@@ -27,6 +27,10 @@ namespace Sonic853.Udon.PosterUI
         /// </summary>
         public int count = 0;
         /// <summary>
+        /// 海报
+        /// </summary>
+        Image[] childrens;
+        /// <summary>
         /// 当前页
         /// </summary>
         public int index = 0;
@@ -70,6 +74,13 @@ namespace Sonic853.Udon.PosterUI
         {
             // if (debuger == null) debuger = UdonDebuger.Instance();
             count = content.childCount;
+            // 获得 content 的所有子物体
+            childrens = new Image[count];
+            for (int i = 0; i < count; i++)
+            {
+                childrens[i] = (Image)content.GetChild(i).GetComponent(typeof(Image));
+                childrens[i].color = i == index ? Color.white : Color.clear;
+            }
         }
         void Update()
         {
@@ -90,6 +101,11 @@ namespace Sonic853.Udon.PosterUI
                 else
                 {
                     scrollRect.horizontalNormalizedPosition = target;
+                    // 目标页颜色为白色，其他页颜色为透明
+                    for (int i = 0; i < count; i++)
+                    {
+                        childrens[i].color = i == index ? Color.white : Color.clear;
+                    }
                 }
             }
             else if (autoMove && !pointerDown)
@@ -103,6 +119,10 @@ namespace Sonic853.Udon.PosterUI
                         index = 0;
                     }
                     target = (float)index / (count - 1);
+                    foreach (var child in childrens)
+                    {
+                        child.color = Color.white;
+                    }
                     touchMove = true;
                 }
             }
@@ -111,6 +131,10 @@ namespace Sonic853.Udon.PosterUI
         {
             index = index - 1 < 0 ? count - 1 : index - 1;
             target = (float)index / (count - 1);
+            foreach (var child in childrens)
+            {
+                child.color = Color.white;
+            }
             lastMoveTime = Time.time;
             touchMove = true;
         }
@@ -118,6 +142,10 @@ namespace Sonic853.Udon.PosterUI
         {
             index = index + 1 >= count ? 0 : index + 1;
             target = (float)index / (count - 1);
+            foreach (var child in childrens)
+            {
+                child.color = Color.white;
+            }
             lastMoveTime = Time.time;
             touchMove = true;
         }
@@ -128,6 +156,10 @@ namespace Sonic853.Udon.PosterUI
             Log("OnPointerDown");
             pointerDown = true;
             pointerUp = false;
+            foreach (var child in childrens)
+            {
+                child.color = Color.white;
+            }
         }
         public void OnPointerUp()
         {
@@ -153,7 +185,7 @@ namespace Sonic853.Udon.PosterUI
         {
             // if (debuger == null)
             // {
-                // Debug.Log($"{_programName}: {text}");
+            // Debug.Log($"{_programName}: {text}");
             //     return;
             // }
             // debuger.Log(text, _programName);
@@ -163,7 +195,7 @@ namespace Sonic853.Udon.PosterUI
         {
             // if (debuger == null)
             // {
-                Debug.LogWarning($"{_programName}: {text}");
+            Debug.LogWarning($"{_programName}: {text}");
             //     return;
             // }
             // debuger.LogWarning(text, _programName);
@@ -173,7 +205,7 @@ namespace Sonic853.Udon.PosterUI
         {
             // if (debuger == null)
             // {
-                Debug.LogError($"{_programName}: {text}");
+            Debug.LogError($"{_programName}: {text}");
             //     return;
             // }
             // debuger.LogError(text, _programName);
