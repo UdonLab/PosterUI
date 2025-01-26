@@ -1,0 +1,30 @@
+[
+  {
+    "type": 0,
+    "content": "avtr_11111111-2222-3333-4444-555555555555",
+    "showtext": "Try Avatar"
+  },
+  {
+    "type": 1,
+    "content": "wrld_fa01cb8c-766c-4f36-8360-57409866d011",
+    "showtext": "View World"
+  },
+  {
+    "type": 2,
+    "content": "https://page.853lab.com",
+    "showtext": "Open Url"
+  },
+  {
+    "type": 3,
+    "content": "grp_1b306ee9-0807-4646-9285-76e51bd844bc",
+    "showtext": "Hidden/InternalErrorShader"
+  },
+  {
+    "type": 2,
+    "content": "https://853lab.booth.pm",
+    "showtext": "Look my Booth!"
+  },
+  {
+    "type": -1
+  }
+]

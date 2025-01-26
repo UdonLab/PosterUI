@@ -3,6 +3,7 @@ using System;
 using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
+using VRC.SDKBase;
 
 namespace Sonic853.Udon.PosterUI
 {
@@ -23,12 +24,26 @@ namespace Sonic853.Udon.PosterUI
         /// </summary>
         public RectTransform content;
         /// <summary>
+        /// TextureSpliter
+        /// </summary>
+        public TextureSpliter textureSpliter;
+        /// <summary>
+        /// Avatar Pedestal
+        /// </summary>
+        public VRC_AvatarPedestal avatarPedestal;
+        /// <summary>
+        /// Portal Marker
+        /// </summary>
+        public VRC_PortalMarker portalMarker;
+        /// <summary>
         /// 海报数量
         /// </summary>
+        [NonSerialized]
         public int count = 0;
         /// <summary>
         /// 海报
         /// </summary>
+        [NonSerialized]
         Image[] childrens;
         /// <summary>
         /// 当前页
@@ -70,7 +85,7 @@ namespace Sonic853.Udon.PosterUI
         // /// 是否是垂直滚动
         // /// </summary>
         // bool isVertical = false;
-        void Start()
+        public void Init()
         {
             // if (debuger == null) debuger = UdonDebuger.Instance();
             count = content.childCount;
@@ -80,6 +95,11 @@ namespace Sonic853.Udon.PosterUI
             {
                 childrens[i] = (Image)content.GetChild(i).GetComponent(typeof(Image));
                 childrens[i].color = i == index ? Color.white : Color.clear;
+            }
+            if (textureSpliter != null)
+            {
+                if (avatarPedestal != null) textureSpliter.avatarPedestal = avatarPedestal;
+                if (portalMarker != null) textureSpliter.portalMarker = portalMarker;
             }
         }
         void Update()
@@ -112,39 +132,46 @@ namespace Sonic853.Udon.PosterUI
             {
                 if (Time.time - lastMoveTime > autoMoveTime)
                 {
-                    lastMoveTime = Time.time;
-                    index++;
-                    if (index >= count)
-                    {
-                        index = 0;
-                    }
-                    target = (float)index / (count - 1);
-                    foreach (var child in childrens)
-                    {
-                        child.color = Color.white;
-                    }
-                    touchMove = true;
+                    Next();
                 }
             }
         }
         public void Previous()
         {
+            var after = index;
             index = index - 1 < 0 ? count - 1 : index - 1;
             target = (float)index / (count - 1);
-            foreach (var child in childrens)
+            if (Math.Abs(after - index) > 1)
             {
-                child.color = Color.white;
+                foreach (var child in childrens)
+                {
+                    child.color = Color.white;
+                }
+            }
+            else
+            {
+                childrens[after].color = Color.white;
+                childrens[index].color = Color.white;
             }
             lastMoveTime = Time.time;
             touchMove = true;
         }
         public void Next()
         {
+            var after = index;
             index = index + 1 >= count ? 0 : index + 1;
             target = (float)index / (count - 1);
-            foreach (var child in childrens)
+            if (Math.Abs(after - index) > 1)
             {
-                child.color = Color.white;
+                foreach (var child in childrens)
+                {
+                    child.color = Color.white;
+                }
+            }
+            else
+            {
+                childrens[after].color = Color.white;
+                childrens[index].color = Color.white;
             }
             lastMoveTime = Time.time;
             touchMove = true;

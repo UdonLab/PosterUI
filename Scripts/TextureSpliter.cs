@@ -1,16 +1,39 @@
 ﻿
+using System;
 using UdonSharp;
 using UnityEngine;
+using VRC.SDK3.Data;
+using VRC.SDKBase;
+using VRC.Udon;
 
 namespace Sonic853.Udon.PosterUI
 {
     public class TextureSpliter : UdonSharpBehaviour
     {
         public Texture2D content;
-        public ImageDisplayer[] displayer;
-        public bool SpliteTexture()
+        public string datasStr;
+        DataList _datas;
+        [NonSerialized]
+        public PosterDisplayer[] displayer;
+        [NonSerialized]
+        public VRC_AvatarPedestal avatarPedestal;
+        [NonSerialized]
+        public VRC_PortalMarker portalMarker;
+        void Start()
         {
-            if (content == null) return false;
+            var count = gameObject.transform.childCount;
+            displayer = new PosterDisplayer[count];
+            for (int i = 0; i < count; i++)
+            {
+                displayer[i] = (PosterDisplayer)gameObject.transform.GetChild(i).GetComponent(typeof(UdonBehaviour));
+                displayer[i].avatarPedestal = avatarPedestal;
+                displayer[i].portalMarker = portalMarker;
+            }
+        }
+        public bool SpliteTexture() => SpliteTexture(content);
+        public bool SpliteTexture(Texture2D _content)
+        {
+            if (_content == null) return false;
             foreach (var item in displayer)
             {
                 if (item == null)
@@ -34,12 +57,12 @@ namespace Sonic853.Udon.PosterUI
                             1f / atlasHeight
                         );
                         var sprite = Sprite.Create(
-                            content,
+                            _content,
                             new Rect(
-                                uv.x * content.width,
-                                uv.y * content.height,
-                                uv.width * content.width,
-                                uv.height * content.height
+                                uv.x * _content.width,
+                                uv.y * _content.height,
+                                uv.width * _content.width,
+                                uv.height * _content.height
                             ),
                             new Vector2(0.5f, 0.5f),
                             100,
@@ -52,7 +75,7 @@ namespace Sonic853.Udon.PosterUI
                     }
                     else
                     {
-                        item.SetTexture(content);
+                        item.SetTexture(_content);
                     }
                 }
                 else
@@ -65,22 +88,22 @@ namespace Sonic853.Udon.PosterUI
                     || positionY < 0
                     || positionWidth < 1
                     || positionHeight < 1
-                    || positionX + positionWidth > content.width
-                    || positionY + positionHeight > content.height)
+                    || positionX + positionWidth > _content.width
+                    || positionY + positionHeight > _content.height)
                         continue;
                     var uv = new Rect(
-                        positionX / (float)content.width,
-                        1 - (positionY + positionHeight) / (float)content.height,
-                        positionWidth / (float)content.width,
-                        positionHeight / (float)content.height
+                        positionX / (float)_content.width,
+                        1 - (positionY + positionHeight) / (float)_content.height,
+                        positionWidth / (float)_content.width,
+                        positionHeight / (float)_content.height
                     );
                     var sprite = Sprite.Create(
-                        content,
+                        _content,
                         new Rect(
-                            uv.x * content.width,
-                            uv.y * content.height,
-                            uv.width * content.width,
-                            uv.height * content.height
+                            uv.x * _content.width,
+                            uv.y * _content.height,
+                            uv.width * _content.width,
+                            uv.height * _content.height
                         ),
                         new Vector2(0.5f, 0.5f),
                         100,
@@ -93,6 +116,22 @@ namespace Sonic853.Udon.PosterUI
                 }
             }
             return true;
+        }
+        public void UpdateData() => UpdateData(datasStr);
+        public void UpdateData(string datas)
+        {
+            if (!VRCJson.TryDeserializeFromJson(datas, out var datasToken)) { return; }
+            if (datasToken.TokenType != TokenType.DataList) { return; }
+            _datas = datasToken.DataList;
+            var datasCount = _datas.Count;
+            for (var i = 0; i < datasCount; i++)
+            {
+                if (!_datas.TryGetValue(i, out var dataToken)) continue;
+                if (dataToken.TokenType != TokenType.DataDictionary) continue;
+                var dataDictionary = dataToken.DataDictionary;
+                if (displayer.Length <= i) continue;
+                displayer[i].SetDataDictionary(dataDictionary);
+            }
         }
         public void SendFunction() => SpliteTexture();
         public void SendFunctions() => SpliteTexture();

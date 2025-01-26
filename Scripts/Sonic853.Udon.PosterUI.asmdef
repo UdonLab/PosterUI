@@ -2,8 +2,10 @@
     "name": "Sonic853.Udon.PosterUI",
     "rootNamespace": "",
     "references": [
+        "Unity.TextMeshPro",
         "VRC.Udon",
-        "UdonSharp.Runtime"
+        "UdonSharp.Runtime",
+        "Sonic853.UdonLab.UrlLoader"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
