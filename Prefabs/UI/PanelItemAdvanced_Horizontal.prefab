@@ -1163,6 +1163,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6971481776941755923, guid: d4b08882e0ecf0445ac8f2eba003d9e8, type: 3}
+      propertyPath: playAnim
+      value: 
+      objectReference: {fileID: 3396317130480367283}
+    - target: {fileID: 6971481776941755923, guid: d4b08882e0ecf0445ac8f2eba003d9e8, type: 3}
+      propertyPath: showText
+      value: 
+      objectReference: {fileID: 8823725633344038147}
+    - target: {fileID: 6971481776941755923, guid: d4b08882e0ecf0445ac8f2eba003d9e8, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 6971481776941755923, guid: d4b08882e0ecf0445ac8f2eba003d9e8, type: 3}

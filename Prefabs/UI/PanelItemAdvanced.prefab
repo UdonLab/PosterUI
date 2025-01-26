@@ -1215,6 +1215,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3831604178761359561, guid: 80dd45d3c61e5c94cac82166c0922075, type: 3}
     - target: {fileID: 4394025031037040501, guid: 80dd45d3c61e5c94cac82166c0922075, type: 3}
+      propertyPath: playAnim
+      value: 
+      objectReference: {fileID: 3930086712306277066}
+    - target: {fileID: 4394025031037040501, guid: 80dd45d3c61e5c94cac82166c0922075, type: 3}
+      propertyPath: showText
+      value: 
+      objectReference: {fileID: 7783177826168003055}
+    - target: {fileID: 4394025031037040501, guid: 80dd45d3c61e5c94cac82166c0922075, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 4394025031037040501, guid: 80dd45d3c61e5c94cac82166c0922075, type: 3}
