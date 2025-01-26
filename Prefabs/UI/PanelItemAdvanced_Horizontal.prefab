@@ -860,7 +860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1132,7 +1132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2314482226347898051, guid: d4b08882e0ecf0445ac8f2eba003d9e8, type: 3}
       propertyPath: m_Name
-      value: PanelItemAdvance_Horizontal
+      value: PanelItemAdvanced_Horizontal
       objectReference: {fileID: 0}
     - target: {fileID: 3368790049605773050, guid: d4b08882e0ecf0445ac8f2eba003d9e8, type: 3}
       propertyPath: m_Name

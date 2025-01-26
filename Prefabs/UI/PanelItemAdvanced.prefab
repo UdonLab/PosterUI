@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1220,7 +1220,7 @@ PrefabInstance:
       objectReference: {fileID: 4394025031037040501, guid: 80dd45d3c61e5c94cac82166c0922075, type: 3}
     - target: {fileID: 8960943432221601189, guid: 80dd45d3c61e5c94cac82166c0922075, type: 3}
       propertyPath: m_Name
-      value: PanelItemAdvance
+      value: PanelItemAdvanced
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
