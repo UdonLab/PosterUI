@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: PosterUIConfig
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: b39a7b8703d1ac743a98e8f51299005f, type: 2}
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 859296d7e6e6d0442af5767d107c7726, type: 2}
   udonAssembly: 
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: 6995ddf50d493954ca7dbab8d791f77c, type: 3}

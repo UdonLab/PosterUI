@@ -10,6 +10,7 @@ namespace Sonic853.Udon.PosterUI
     public class PosterUI : UdonSharpBehaviour
     {
         string programName = "PosterUI";
+        public bool initAtStart = false;
         // public UdonDebuger debuger;
         /// <summary>
         /// 滚动视图
@@ -85,6 +86,11 @@ namespace Sonic853.Udon.PosterUI
         // /// 是否是垂直滚动
         // /// </summary>
         // bool isVertical = false;
+        void Start()
+        {
+            if (!initAtStart) return;
+            Init();
+        }
         public void Init()
         {
             // if (debuger == null) debuger = UdonDebuger.Instance();

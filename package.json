@@ -1,6 +1,6 @@
 {
   "name": "com.sonic853.udonlab.posterui",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0",
   "displayName": "Udon Lab - PosterUI",
   "description": "Automatically update News and Events",
   "unity": "2022.3",

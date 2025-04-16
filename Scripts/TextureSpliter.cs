@@ -130,7 +130,8 @@ namespace Sonic853.Udon.PosterUI
                 if (dataToken.TokenType != TokenType.DataDictionary) continue;
                 var dataDictionary = dataToken.DataDictionary;
                 if (displayer.Length <= i) continue;
-                displayer[i].SetDataDictionary(dataDictionary);
+                displayer[i].dataDictionary = dataDictionary;
+                displayer[i].SetDataDictionary();
             }
         }
         public void SendFunction() => SpliteTexture();
